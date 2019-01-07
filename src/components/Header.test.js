@@ -1,25 +1,20 @@
-import React from 'React';
-import ReactDOM from 'react-dom';
-import Header from './Header';
-import {configure, shallow} from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from "React";
+import ReactDOM from "react-dom";
+import Header from "./Header";
+import { configure, shallow } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
-configure({adapter: new Adapter()});
+configure({ adapter: new Adapter() });
 
-describe('Header tests', () => {
+describe("Header tests", () => {
+  it("Header renders without a problem", () => {
+    const div = document.createElement("div");
+    ReactDOM.render(<Header />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 
-
-    it('Header renders without a problem', () => {
-        const div = document.createElement('div');
-        ReactDOM.render(<Header />, div);
-        ReactDOM.unmountComponentAtNode(div);
-
-    })
-
-    it('Header renders', () => {
-        const wrapper = shallow(<Header />);
-        console.log(wrapper.debug());
-        expect(wrapper.find('h1').text()).toBe('Header');
-    })
-
-})
+  it("Header renders", () => {
+    const wrapper = shallow(<Header />);
+    expect(wrapper.find("h1").text()).toBe("Header");
+  });
+});

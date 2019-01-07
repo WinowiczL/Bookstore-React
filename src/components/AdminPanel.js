@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 class AdminPanel extends React.Component {
-    render() {
-        return <div>Admin Panel</div>;
-    }
+  render() {
+    return <div>Admin Panel</div>;
+  }
 }
 
 export default AdminPanel;
