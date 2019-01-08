@@ -2,7 +2,7 @@ import React from "react";
 
 class AdminPanel extends React.Component {
   render() {
-    return <div>Admin Panel</div>;
+    return <div className="adminPanel col-md-4">Admin Panel</div>;
   }
 }
 

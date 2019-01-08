@@ -4,14 +4,18 @@ import Order from "./Order";
 import Header from "./Header";
 import Inventory from "./Inventory";
 
+import "../index.css";
+
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <AdminPanel />
-        <Order />
+      <div className="app container">
         <Header />
-        <Inventory />
+        <div className="row">
+          <Order />
+          <Inventory />
+          <AdminPanel />
+        </div>
       </div>
     );
   }
