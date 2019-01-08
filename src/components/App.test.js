@@ -20,4 +20,9 @@ describe("App tests", () => {
     expect(wrapper.find("AdminPanel").exists()).toBe(true);
     expect(wrapper.find("Inventory").exists()).toBe(true);
   });
+
+  it("Snapshot matches", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot();
+  })
 });

@@ -17,4 +17,9 @@ describe("Inventory tests", () => {
     const wrapper = shallow(<Inventory />);
     expect(wrapper.find("div").text()).toBe("Inventory");
   });
+
+  it("Snapshot matches", () => {
+    const wrapper = shallow(<Inventory />);
+    expect(wrapper).toMatchSnapshot();
+  })
 });

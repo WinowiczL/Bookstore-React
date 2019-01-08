@@ -13,8 +13,8 @@ describe("AdminPanel tests", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("Hello world renders", () => {
+  it("Snapshot matches", () => {
     const wrapper = shallow(<AdminPanel />);
-    expect(wrapper.find("div").text()).toBe("Admin Panel");
-  });
+    expect(wrapper).toMatchSnapshot();
+  })
 });

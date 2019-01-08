@@ -17,4 +17,9 @@ describe("Order tests", () => {
     const wrapper = shallow(<Order />);
     expect(wrapper.find("div").text()).toBe("Order");
   });
+
+  it("Snapshot matches", () => {
+    const wrapper = shallow(<Order />);
+    expect(wrapper).toMatchSnapshot();
+  })
 });
