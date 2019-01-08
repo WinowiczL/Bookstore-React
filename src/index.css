@@ -32,5 +32,10 @@ code {
 }
 
 .adminPanel {
-  background-color: tan;
+  background-color: black;
+  padding: 15px;
+}
+
+.form-check-label {
+  color: white;
 }
