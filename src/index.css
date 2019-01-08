@@ -12,3 +12,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.app {
+  background-color: aqua;
+}
+
+.header {
+  height: 150px;
+  background-color: brown;
+  text-align: center;
+}
+
+.order {
+  background-color: darkgray;
+}
+
+.inventory {
+  background-color: green;
+}
+
+.adminPanel {
+  background-color: black;
+  padding: 15px;
+}
+
+.form-check-label {
+  color: white;
+}
