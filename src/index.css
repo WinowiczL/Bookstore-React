@@ -38,4 +38,10 @@ code {
 
 .form-check-label {
   color: white;
+  margin-left: 30px;
+}
+
+#bookOnStock {
+  margin-top: 7px;
+  margin-left: 10px;
 }
