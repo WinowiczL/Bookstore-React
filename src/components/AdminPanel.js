@@ -10,8 +10,7 @@ class AdminPanel extends React.Component {
         bookDescription: "",
         bookOnStock: false,
         bookImage: ""
-      },
-      books: []
+      }
     };
   }
 
@@ -38,13 +37,11 @@ class AdminPanel extends React.Component {
   addNewBook = event => {
     event.preventDefault();
 
-    let newBooks = [...this.state.books];
     let newBook = { ...this.state.book };
-    newBooks.push(newBook);
 
-    this.setState({
-      books: newBooks
-    });
+    this.props.addBook(newBook);
+
+    event.currentTarget.reset();
   };
 
   render() {
