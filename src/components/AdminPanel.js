@@ -38,7 +38,7 @@ class AdminPanel extends React.Component {
               name="bookOnStock"
               className="form-check-input"
             />
-            <label for="bookOnStock" className="form-check-label">
+            <label htmlFor="bookOnStock" className="form-check-label">
               On stock
             </label>
           </div>
